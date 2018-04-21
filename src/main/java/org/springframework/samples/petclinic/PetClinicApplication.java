@@ -1,17 +1,12 @@
 /*
- * Copyright 2002-2014 the original author or authors.
+ * Copyright (C) 2017 Sylvain Leroy - BYOSkill Company All Rights Reserved
+ * You may use, distribute and modify this code under the
+ * terms of the MIT license, which unfortunately won't be
+ * written for another century.
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+ * You should have received a copy of the MIT license with
+ * this file. If not, please write to: sleroy at byoskill.com, or visit : www.byoskill.com
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
  */
 
 package org.springframework.samples.petclinic;
@@ -19,17 +14,20 @@ package org.springframework.samples.petclinic;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import com.byoskill.spring.cqrs.annotations.EnableCqrsModule;
+
 /**
  * PetClinic Spring Boot Application.
- * 
+ *
  * @author Dave Syer
  *
  */
 @SpringBootApplication
+@EnableCqrsModule
 public class PetClinicApplication {
 
-    public static void main(String[] args) throws Exception {
-        SpringApplication.run(PetClinicApplication.class, args);
+    public static void main(final String[] args) throws Exception {
+	SpringApplication.run(PetClinicApplication.class, args);
     }
 
 }

@@ -15,7 +15,9 @@
   <name>petclinic</name>
 
   <properties>
-
+	<!--  CQRS -->
+	<cqrs.version>0.7.0</cqrs.version>
+	
     <!-- Generic properties -->
     <java.version>1.8</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -32,6 +34,13 @@
   </properties>
 
   <dependencies>
+
+  	<dependency>
+  	<artifactId>spring-cqrs-arch</artifactId>
+  	<version>${cqrs.version}</version>
+  	<groupId>com.byoskill.spring.cqrs</groupId>
+  	</dependency>
+  
     <!-- Spring and Spring Boot dependencies -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
